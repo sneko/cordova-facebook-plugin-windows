@@ -84,4 +84,4 @@ https://github.com/Wizcorp/phonegap-facebook-plugin
 Due to my studies, I haven't been able to resolve all the little problems.
 
 
-*October - 2014 - Created by Thomas Ramé*
+*2014 - Created by Thomas Ramé*
