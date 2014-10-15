@@ -13,7 +13,7 @@ It permit to use Facebook dialogs on Windows platform (version 8.1 minimum). It'
 **WARNING! Some disadvantages exist:**
 
 
-**- This pluging uses the new Windows webview feature, and it's only available for Windows 8.1/Windows Phone 8.1 minimum**
+**- This plugin uses the new Windows webview feature, and it's only available for Windows 8.1/Windows Phone 8.1 minimum**
 
 **- Because webviews, you need to put a page on a website to mediate between your Windows app and Facebook servers**
 
