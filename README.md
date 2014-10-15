@@ -31,7 +31,7 @@ Upload the "website" directory on your server. Remember, you need to have a vali
 
 In your Cordova project, put the "/windows/facebookConnectPlugin.js" in the "www/js" directory into your Windows app. Then, modify this file and replace the "hrefPlugin" url.
 
-To authorize external communication, add this code in "package.windows.appxmanifest" under this *<Application Id="..." StartPage="www/index.html">* tag :
+To authorize external communication, add this code in "package.windows.appxmanifest" under this *< Application Id="..." StartPage="www/index.html" >* tag :
 ```
 <ApplicationContentUriRules>
   <Rule Match="https://www.YOURPLUGINURL.com/manager.html" Type="include"/>
