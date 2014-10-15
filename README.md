@@ -49,7 +49,7 @@ Here the code :
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Laby</title>
+		<title>Sample</title>
 	</head>
 	<body>
 		<div id="fb-root"></div>
