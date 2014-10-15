@@ -11,7 +11,7 @@ It permit to use Facebook dialogs on Windows platform (version 8.1 minimum). It'
 **WARNING! Some disadvantages exist**
 
 
-**- This plusing uses the new webview feature, and it's only available for Windows 8.1/Windows Phone 8.1 minimum**
+**- This pluging uses the new Windows webview feature, and it's only available for Windows 8.1/Windows Phone 8.1 minimum**
 
 **- Because webviews, you need to put a page on a website to mediate between your Windows app and Facebook servers**
 
@@ -19,4 +19,13 @@ It permit to use Facebook dialogs on Windows platform (version 8.1 minimum). It'
 
 Setup
 ===============================
+
+## On your website
+
+Upload the "website" directory on your server. Remember, you need to have a SSL connection!
+
+
+## In app
+
+In your Cordova project, put the "/windows/facebookConnectPlugin.js" in the "www" directory into your Windows app.
 
