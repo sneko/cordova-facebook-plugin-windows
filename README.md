@@ -24,23 +24,29 @@ Setup
 
 ## On your website
 
-Upload the "website" directory on your server. Remember, you need to have a valid SSL certificate! 
+Upload the "website" directory on your server. Remember, you need to have a valid SSL certificate! Keep in mind the full URL of your uploaded directory.
+
+Example: https://www.YOURPLUGINURL.com/myplugin/
+
+## In Facebook Settings
+
+After create an app on https://developers.facebook.com/ , go in "Settings > Advanced"
 
 
 ## In app
 
 In your Cordova project, put the "/windows/facebookConnectPlugin.js" in the "www/js" directory into your Windows app. Then, modify this file and replace the "hrefPlugin" url.
 
-To authorize external communication, add this code in "package.windows.appxmanifest" under this *< Application Id="..." StartPage="www/index.html" >* tag :
+To authorize external communication, replace the following URL with yours (keep the "/manager.html"), add this code in "package.windows.appxmanifest" under this *< Application Id="..." StartPage="www/index.html" >* tag :
 ```
 <ApplicationContentUriRules>
-  <Rule Match="https://www.YOURPLUGINURL.com/manager.html" Type="include"/>
+  <Rule Match="https://www.YOURPLUGINURL.com/myplugin/manager.html" Type="include"/>
 </ApplicationContentUriRules>
 ```
 
 It's almost over :)...
 
-To finish, add fb-root div and include the facebookConnectPlugin.js with script tag. I joined a little sample to know when the full plugin is loaded. You can call functions which present in the cross-platform Facebook Plugin for Cordova.
+To finish, I joined a little sample to know when the full plugin is loaded. You are able to call functions which present in the cross-platform Facebook Plugin for Cordova.
 
 Here the code :
 
@@ -52,24 +58,23 @@ Here the code :
 		<title>Sample</title>
 	</head>
 	<body>
-		<div id="fb-root"></div>
 		<div>
 		  Hi, it's just a Sample !
 		</div>
-		<script src="cordova.js"></script>
-		<script src="js/facebookConnectPlugin.js"></script>
+		<script src="cordova.js"></script> // Include the required file to Cordova
+		<script src="js/facebookConnectPlugin.js"></script> // Include 
 		<script>
-  if (window.cordova && window.cordova.platformId == "windows") {
-		facebookMan.manager.addEventListener("MSWebViewNavigationCompleted", function () {
-			facebookConnectPlugin.windowsInit("YOUR APP ID");
+  	if (window.cordova && window.cordova.platformId == "windows") { // Check if it is the W/WP 8.1 or more
+		facebookMan.manager.addEventListener("MSWebViewNavigationCompleted", function () { // Detect when the webview is totally loaded
+			facebookConnectPlugin.windowsInit("YOUR APP ID"); // Init the process with your Facebook App ID
 
-				facebookConnectPlugin.getLoginStatus(function (response) {
-      		console.log(response);
-      	}, function (response) {
-      		console.log(response);
-      	});
+			facebookConnectPlugin.getLoginStatus(function (response) { // Basic using example
+		      		console.log(response);
+		      	}, function (response) {
+		      		console.log(response);
+		      	});
       	
-      	// Put what you want!
+      			// Put what you want!
 		});
 	}
 		</script>
