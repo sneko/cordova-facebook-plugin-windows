@@ -30,7 +30,9 @@ Example: https://www.YOURPLUGINURL.com/myplugin/
 
 ## In Facebook Settings
 
-After create an app on https://developers.facebook.com/ , go in "Settings > Advanced"
+After create an app on https://developers.facebook.com/ , go in "Settings > Advanced". Switch "Client OAuth Login" to ON and add the following URL into the "Valid OAuth redirect URIs :
+
+https://www.YOURPLUGINURL.com/myplugin/login_success.html
 
 
 ## In app
