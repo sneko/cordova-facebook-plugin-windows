@@ -10,7 +10,7 @@ The plugin can be used without Cordova, if you develop an JavaScript app.
 
 It permit to use Facebook dialogs on Windows platform (version 8.1 minimum). It's a great alternative to FacebookSDK.net which haven't the capacity to display the Facebook UI (requesting, sharing...).
 
-**WARNING! Some disadvantages exist**
+**WARNING! Some disadvantages exist:**
 
 
 **- This pluging uses the new Windows webview feature, and it's only available for Windows 8.1/Windows Phone 8.1 minimum**
