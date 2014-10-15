@@ -1,7 +1,7 @@
 Presentation
 ===============================
 
-This plugin is compatible with Cordova apps, which the same syntax that :
+This plugin is compatible with Cordova apps, which use the same syntax that :
 https://github.com/Wizcorp/phonegap-facebook-plugin
 
 So you can use it with mine, there will be no interference.
