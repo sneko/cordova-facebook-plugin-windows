@@ -40,7 +40,7 @@ To authorize external communication, add this code in "package.windows.appxmanif
 
 It's almost over :)...
 
-To finish, add fb-root div and include the facebookConnectPlugin.js with script tag. I joined a little sample to know when the full plugin is loaded. You can have more information about available functions cross-platform Facebook Plugin for Cordova.
+To finish, add fb-root div and include the facebookConnectPlugin.js with script tag. I joined a little sample to know when the full plugin is loaded. You can call functions which present in the cross-platform Facebook Plugin for Cordova.
 
 Here the code :
 
@@ -78,7 +78,11 @@ Here the code :
 
 ```
 
-Maybe the directory will be included in cross-platform plugin:
+Maybe the directory will be included in the cross-platform plugin if it is of interest to you:
 https://github.com/Wizcorp/phonegap-facebook-plugin
 
 Due to my studies, I haven't been able to resolve all the little problems.
+
+
+*October - 2014*
+*Created by Thomas Ramé*
