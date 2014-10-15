@@ -5,7 +5,7 @@ This plugin is compatible with Cordova apps, which have the same syntax that :
 
 https://github.com/Wizcorp/phonegap-facebook-plugin
 
-So you can use it with mine to cross-platforms apps, there will be no interference.
+So you can use it with mine to cross-platform apps, there will be no interference.
 
 The plugin can be used without Cordova, if you develop an JavaScript app.
 
@@ -91,7 +91,7 @@ Here the code :
 Maybe the directory will be included in the cross-platform plugin if it is of interest to you:
 https://github.com/Wizcorp/phonegap-facebook-plugin
 
-Due to my studies, I was not able to solve all the small problems at the moment.
+Due to my studies, I was not able to solve all the small problems yet.
 
 
 *2014 - Created by Thomas Ramé*
