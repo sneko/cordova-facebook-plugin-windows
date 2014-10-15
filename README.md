@@ -91,7 +91,7 @@ Here the code :
 Maybe the directory will be included in the cross-platform plugin if it is of interest to you:
 https://github.com/Wizcorp/phonegap-facebook-plugin
 
-Due to my studies, I haven't been able to resolve all the little problems.
+Due to my studies, I was not able to solve all the small problems at the moment.
 
 
 *2014 - Created by Thomas Ramé*
