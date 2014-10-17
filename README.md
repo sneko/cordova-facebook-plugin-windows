@@ -46,6 +46,7 @@ To authorize external communication, replace the following URL with yours (keep 
 ```
 <ApplicationContentUriRules>
   <Rule Match="https://www.YOURPLUGINURL.com/myplugin/manager.html" Type="include"/>
+  <Rule Match="https://www.facebook.com/login.php" Type="include"/>
 </ApplicationContentUriRules>
 ```
 
