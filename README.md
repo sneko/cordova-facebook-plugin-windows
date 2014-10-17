@@ -38,7 +38,7 @@ https://www.YOURPLUGINURL.com/myplugin/login_success.html
 
 ## In app
 
-Put the "/windows/facebookConnectPlugin.js" in the "www/js" directory into your Windows app. Then, modify this file and replace the "hrefPlugin".
+Copy the "windows" directory into "www/" in your Windows app. Then, modify the "facebookConnectPlugin.js" file and replace the "hrefPlugin".
 
 Example: https://www.YOURPLUGINURL.com/myplugin/
 
@@ -54,7 +54,7 @@ It's almost over :)...
 
 To finish, I joined a little sample to know when the full plugin is loaded. You are able to call functions which are present in the cross-platform Facebook Plugin for Cordova.
 
-Here the code :
+Here the code of "index.html":
 
 ```
 <!DOCTYPE html>
