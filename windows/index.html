@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sample</title>
+    </head>
+    <body>
+        <div>
+          Hi, it's just a Sample !
+        </div>
+        <script src="cordova.js"></script> // Include the required file to Cordova
+        <script src="js/facebookConnectPlugin.js"></script> // Include 
+        <script>
+    if (window.cordova && window.cordova.platformId == "windows") { // Check if it is the W/WP 8.1 or more
+        facebookMan.manager.addEventListener("MSWebViewNavigationCompleted", function () { // Detect when the webview is totally loaded
+            facebookConnectPlugin.windowsInit("YOUR APP ID"); // Init the process with your Facebook App ID
+
+            facebookConnectPlugin.getLoginStatus(function (response) { // Basic using example
+                    console.log(response);
+                }, function (response) {
+                    console.log(response);
+                });
+
+                // Put what you want!
+        });
+    }
+        </script>
+    </body>
+</html>
