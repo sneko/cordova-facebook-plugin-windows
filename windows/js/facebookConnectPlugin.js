@@ -6,7 +6,7 @@
  */
 
 
-if (window.cordova && ["windows", "windowsphone"].indexOf(window.cordova.platformId) >= 0) {
+if (window.cordova && window.cordova.platformId == "windows") {
     var facebookMan = {
         hrefPlugin: "https://www.YOURPLUGINURL.com/myplugin/", // Only https:// link, don't forget the end "/" like a directory
         appId: "",
